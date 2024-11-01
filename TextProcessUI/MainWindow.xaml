@@ -1,0 +1,61 @@
+﻿<Window x:Class="TextProcessUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Text Process" Height="450" Width="800">
+    <Grid Margin="10">
+        <TabControl>
+            <!-- Ordering Tab -->
+            <TabItem Header="Order Text">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Enter text to order:"/>
+                    <TextBox x:Name="txtOrderText" Height="80" TextWrapping="Wrap" Margin="0,5"/>
+
+                    <TextBlock Text="Select order option:" Margin="0,5"/>
+                    <ComboBox x:Name="cmbOrderOptions" Height="25" Margin="0,5"/>
+
+                    <Button Content="Order Text" Width="100" Margin="0,5" Click="OrderText_Click"/>
+                    <ListBox x:Name="lstOrderedText" Height="150" Margin="0,5"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Text Analysis Tab -->
+            <TabItem Header="Text Analysis">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Enter text to analyze:"/>
+                    <TextBox x:Name="txtAnalyzeText" Height="80" TextWrapping="Wrap" Margin="0,5"/>
+
+                    <Button Content="Analyze Text" Width="100" Margin="0,5" Click="AnalyzeText_Click"/>
+
+                    <TextBlock Text="Hyphen Count:" Margin="0,5"/>
+                    <TextBox x:Name="txtHyphenCount" IsReadOnly="True" Margin="0,5"/>
+
+                    <TextBlock Text="Word Count:" Margin="0,5"/>
+                    <TextBox x:Name="txtWordCount" IsReadOnly="True" Margin="0,5"/>
+
+                    <TextBlock Text="Space Count:" Margin="0,5"/>
+                    <TextBox x:Name="txtSpaceCount" IsReadOnly="True" Margin="0,5"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Levenshtein Tab -->
+            <TabItem Header="Levenshtein Distance">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Base Word:"/>
+                    <TextBox x:Name="txtBaseWord" Margin="0,5"/>
+
+                    <TextBlock Text="Compared Word:"/>
+                    <TextBox x:Name="txtComparedWord" Margin="0,5"/>
+
+                    <Button Content="Calculate Distance" Width="150" Margin="0,5" Click="CalculateLevenshtein_Click"/>
+
+                    <TextBlock Text="Levenshtein Distance:" Margin="0,5"/>
+                    <TextBox x:Name="txtLevenshteinDistance" IsReadOnly="True" Margin="0,5"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
+

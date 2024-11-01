@@ -1,0 +1,71 @@
+# Ignore Visual Studio temporary files, build results, and
+# Windows image file caches
+##############################
+## Windows ###################
+##############################
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+##############################
+## Visual Studio #############
+##############################
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files and logs
+**/*.log
+*.tlog
+*.lastbuildstate
+
+# Caches
+.vs/
+
+##############################
+## Visual Studio Code ########
+##############################
+.vscode/
+
+##############################
+## .NET ######################
+##############################
+project.lock.json
+project.fragment.lock.json
+artifacts/
+bin/
+obj/
+*.csproj.user
+*.csproj.bak
+*.fsproj.user
+*.fsproj.bak
+*.userosscache
+
+##############################
+## ASP.NET ###################
+##############################
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNet Core settings and outputs
+project.lock.json
+project.fragment.lock.json
+artifacts/
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.sln.docstates
+
+# Rider settings
+.idea/
